@@ -1,16 +1,103 @@
-.box {
-    width: 100px;
-    height: 100px;
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
 }
-.light{
-background-color: lemonchiffon;
+
+.btn {
+    align-self: center;
+    background-color:#930b0c;
+    border: none;
+    padding: 35px;
+    color: #f3ecca;
+    font-size: 20px;
+    margin-top: 20px;  
+    position: absolute;
+    width: 20%;
+    cursor: pointer;
+} 
+
+
+body {
+    background-image: url("https://cdn.glitch.com/d35599c5-e596-4297-9a93-b2b316610cbe%2F5.jpg?v=1629727073198");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:black;
 }
-.pink {
-background-color: pink;
+
+h1 {
+    color: #f3ecca;
+    background-color: #454545;
+    height: 8vh;
+    padding: 5px;
+    font-size: 30;
 }
-.blue {
-background-color: blue;
+
+.links {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    width: 300px;
 }
-.green {
-    background-color: green;
+
+
+.header {
+    height: 12vh;
+    flex: 1;
+    margin: 5px;
+    background-color: black;
+}
+
+.mobile {
+    display: none;
+}
+
+@media all and (max-width:800px) {
+    body {
+        height:100vh;
+        background-image: url ("https://cdn.glitch.com/d35599c5-e596-4297-9a93-b2b316610cbe%2F5.jpg?v=1629727073198");
+}
+
+.header, .links {
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 40px;
+    
+}
+.one {
+    height:100vh;
+}
+
+.two {
+    display: none;
+}
+.mobile {
+    align-self: flex-start;
+    border: none;
+    padding: 20px;
+    color: #f3ecca;
+    font-size: 15px;
+    margin-top: 20px; 
+    position: absolute;
+    width: 27%;
+    background-color: #454545;
+}
+.btn {
+    align-self: center;
+    background-color:#930b0c;
+    border: none;
+    padding: 10px;
+    color: #f3ecca;
+    font-size: 20px;
+    margin-top: 90px;  
+    position: absolute;
+    width: 30%;
+} 
 }
